@@ -1,0 +1,21 @@
+.button {
+    border: none;
+    padding: 0 4px;
+    height: 40px;
+    background-color: steelblue;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid steelblue;
+    text-transform: uppercase;
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    &:hover {
+        background-color: aliceblue;
+        color: steelblue;
+    }
+}
