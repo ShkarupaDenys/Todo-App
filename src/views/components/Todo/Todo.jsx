@@ -10,6 +10,7 @@ const Todo = () => {
     const [value, setValue] = useState('')
     const [todoListData, setTodolistData] = useState([])
     const [count, setCount] = useState(todoListData.length)
+    const [isChecked, setIsChecked] = useState(false)
 
     const getInputValue = (e) => {
         setValue(e.target.value)
@@ -17,13 +18,15 @@ const Todo = () => {
 
     const createTodo = () => {
 
+        const emptyValue = value.trim() === '';
+
         const choosenValue = todoListData.find(({title}) => title === value)
 
         if (choosenValue) {
             alert(`${choosenValue.title} value already exists`)
         }
 
-        if (value !== '' && !choosenValue) {
+        if (!emptyValue && !choosenValue) {
             setTodolistData([...todoListData, {
                 title: value,
                 id: value,
@@ -39,8 +42,17 @@ const Todo = () => {
         setCount(todoListData.length - 1)
     }
 
+    const checkboxToogle = () => {
+        setIsChecked(!isChecked)
+        console.log(isChecked)
+    }
+
     const buttonIcon = <Plus />
-    const renderList = todoListData.length > 0 && <TodoList list={todoListData} deleteItem={deleteItem}/>
+    const renderList = todoListData.length > 0 &&
+        <TodoList 
+            checkboxToogle={checkboxToogle}
+            list={todoListData}
+            deleteItem={deleteItem}/>
 
     return (
         <section className="todo">

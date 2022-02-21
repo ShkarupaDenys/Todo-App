@@ -1,12 +1,14 @@
+@import './variables';
+@import './todo';
+@import './components/todo-list';
+@import './components/button';
+@import './components/input';
+@import './components/checkbox';
+
 .page {
     height: 100vh;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
-
-@import './todo';
-@import './components/todo-list';
-@import './components/button';
-@import './components/input';

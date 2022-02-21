@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Remove = () => (
     <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -6,4 +6,4 @@ const Remove = () => (
     </svg>
 )
 
-export default Remove;
+export default Remove

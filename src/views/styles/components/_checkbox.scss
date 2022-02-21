@@ -1,0 +1,21 @@
+.checkbox {
+    &__real {
+        display: none;
+    }
+
+    &__custom {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        outline: 1px solid gray;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 10px;
+        height: 8px;
+    }
+}
