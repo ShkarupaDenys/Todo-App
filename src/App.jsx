@@ -1,5 +1,5 @@
-import Todo from './views/components/Todo/Todo';
-import './views/styles/main.scss'
+import Todo from './components/Todo/Todo';
+import './styles/main.scss'
 
 const App = () => (
   <div className="page">

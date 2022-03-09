@@ -1,5 +1,6 @@
-import React from "react";
-import TodoItem from "./TodoItem";
+import React from "react"
+import TodoItem from "../TodoItem/TodoItem"
+import './_todo-list.scss'
 
 const TodoList = ({list, deleteItem, checkboxToogle}) => (
     <ul className="todo-list">

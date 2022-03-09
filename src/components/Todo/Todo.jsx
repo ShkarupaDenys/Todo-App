@@ -1,9 +1,10 @@
 import React from "react"
-import TodoList from './TodoList'
-import Input from "../Input"
-import Button from "../Button";
-import Plus from "../../icons/Plus";
-import { useState } from 'react';
+import TodoList from './components/TodoList/TodoList'
+import Input from "../Input/Input"
+import Button from "../Button/Button"
+import Plus from "../../icons/Plus"
+import { useState } from 'react'
+import './_todo.scss'
 
 const Todo = () => {
 

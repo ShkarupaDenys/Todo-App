@@ -1,6 +1,7 @@
 import React from 'react'
-import Check from '../icons/Check'
+import Check from '../../icons/Check'
 import { useState } from 'react'
+import './_checkbox.scss'
 
 const Checkbox = ({className, checked = false, onChange}) => {
 
